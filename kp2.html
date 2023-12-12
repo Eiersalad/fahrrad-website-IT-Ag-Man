@@ -20,10 +20,10 @@ body {
   
 
 .navbar {
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex: 1;
+  max-height: 50px;
+  overflow: hidden;
   border-radius: 20px;
   border-style: solid;
   border-width: 3px;
@@ -33,7 +33,7 @@ body {
 
 .navbar a {
   float: left;
-  font-size: 16px;
+
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -47,7 +47,7 @@ body {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 100%;  
   border: none;
   outline: none;
   color: white;
@@ -92,11 +92,29 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.logo {
+  width: 100%;
+}
+
+.logs{
+  width: 100px;
+}
+
+.boks {
+  width: 100%;
+  display: flex;
+  top: 0;
+  position: sticky;
+  background-color: #f9f9f9;
+}
 </style>
 </head>
 <body style="background-color:white;">
 
-<div class="navbar">
+<div class="boks">
+  <div class="logs"><image src="logo-transparent-png.png", class="logo"></image></div>
+  <div class="navbar">
   <div>
   <a href="#home">Home</a>
   <div class="dropdown">
@@ -112,11 +130,13 @@ body {
   </div>
   <a href="#news">Reparatur</a>
   <a href="#news">Über uns</a>
+  </div>
+  </div>
+
+
+
 </div>
-<div>
-    <image src="Jupiter_bayan_accordion.JPG"></image>
-</div>
-</div>
+
 
 <h3>Fahrräder</h3>
 <div class="container">
